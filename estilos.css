@@ -46,12 +46,14 @@ nav a{
     color: aliceblue;
     text-decoration: none;
     padding: 14px 50px;
-    font-size: 18px;}
+    font-size: 18px;
+    transition: all 1s;
+}
 
 nav a:hover{
     background:rgb(7, 82, 153) ;
+    font-size: 20px;
 }
-
 
 .row{
     display: flex;
@@ -105,6 +107,26 @@ nav ul li a{
     resize: none;
 }
 
+input:focus{
+    font-size: 20px;
+    border: 5px solid rgb(183, 0, 255);
+    color: blueviolet;
+}
+
+input{
+    transition: all 2s;
+}
+
+textarea:focus{
+    font-size: 20px;
+    border: 5px solid rgb(183, 0, 255);
+    color: blueviolet;
+}
+
+textarea{
+    transition: all 1s;
+}
+
 @media screen and (min-width:555px){
     .form-register{
         width: 555px;
@@ -138,6 +160,7 @@ nav ul li a{
     letter-spacing: 2px;
     padding: 5px;
 }
+
 
 /*HOME*/
 
