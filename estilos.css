@@ -134,6 +134,9 @@ nav ul li a{
 
 .footer p{
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    padding: 5px;
 }
 
 /*HOME*/
