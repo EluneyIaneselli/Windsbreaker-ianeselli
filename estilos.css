@@ -1,19 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-.titulo{
-    background-color: aliceblue;
-}
-
 .header{
     padding: 50px;
-    background-color: aliceblue;
     text-align: center;
 
 }
@@ -26,7 +18,6 @@ body{
 
 header{
     padding: 50px;
-    background-color: rgb(227, 237, 248);
     text-align: center;
 }
 
@@ -42,18 +33,6 @@ nav{
     justify-content: center;
 }
 
-nav a{
-    color: aliceblue;
-    text-decoration: none;
-    padding: 14px 50px;
-    font-size: 18px;
-    transition: all 1s;
-}
-
-nav a:hover{
-    background:rgb(7, 82, 153) ;
-    font-size: 20px;
-}
 
 .row{
     display: flex;
@@ -158,7 +137,7 @@ textarea{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
-    padding: 5px;
+    padding: 1px;
 }
 
 
@@ -174,6 +153,10 @@ textarea{
 
 .subrayadohome{
     padding-top: 15px solid #121212;
+}
+
+.carousel-inner{
+    max-height: 700px;
 }
 
 .section{
