@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif&family=Open+Sans:wght@300&family=PT+Serif&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +25,7 @@ header{
 
 .encabezado{
     font-size: 35px;
+    font-family: 'Merriweather', serif;
 }
 
 
@@ -88,18 +91,18 @@ nav ul li a{
 
 input:focus{
     font-size: 20px;
-    border: 5px solid rgb(183, 0, 255);
-    color: blueviolet;
+    border: 5px solid rgb(189, 251, 253);
+    color: rgb(189, 251, 253);
 }
 
 input{
-    transition: all 2s;
+    transition: all 1s;
 }
 
 textarea:focus{
     font-size: 20px;
-    border: 5px solid rgb(183, 0, 255);
-    color: blueviolet;
+    border: 5px solid rgb(189, 251, 253);
+    color: rgb(189, 251, 253);
 }
 
 textarea{
@@ -235,4 +238,8 @@ textarea{
 }
 
 /*DESKSTOP*/
+
+
+
+
 
