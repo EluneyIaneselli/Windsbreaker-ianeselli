@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif&family=Open+Sans:wght@300&family=PT+Serif&display=swap');
+@use 'fuentes';
+@import "_variables.scss";
+@import "_maps.scss";
+@import "_extends.scss";
 
 *{
     padding: 0;
@@ -14,8 +17,8 @@
 body{
     margin: 0%;
     padding: 0%;
-    height: 2500px;
-    background-color: aliceblue;
+    height: 1800px;
+    background-color: $color5;
 }
 
 header{
@@ -24,15 +27,15 @@ header{
 }
 
 .encabezado{
-    font-size: 35px;
-    font-family: 'Merriweather', serif;
+    font-size: map-get($font-size, xlarge);
+    font-family: 'Roboto Slab', serif;
 }
 
 
 nav{
     display: flex;
     flex-direction: row;
-    background-color: #333;
+    background-color: $color2;
     justify-content: center;
 }
 
@@ -43,20 +46,19 @@ nav{
 
     .Home2{
         text-align: center;
-        font-family: 'Noto Serif', serif;
-        background-color: white;
-        border: 3px solid #121212;
-    
+        font-family: 'Roboto Slab', serif;
+        background-color: $color3;
+        border: 3px solid ;
         .subrayadohome{
-            padding-top: 15px solid #121212;
+            padding-top: 15px solid $color1;
         }
-    
     }
 }
 
+
 section{
     flex: 70% ;
-    background-color: aliceblue;
+    background-color: $color5;
     padding: 20px;
     text-align: center;
 }
@@ -64,7 +66,7 @@ section{
 footer{
     padding: 20px;
     text-align: center;
-    background-color: #333;
+    background-color: $color2;
 }
 
 
@@ -85,15 +87,15 @@ nav{
 /*CONTACTOS*/
 
 .form-register{
-    background: #121212;
+    background: $color1;
     padding: 30px;
     margin: auto;
     margin-top: 70px;
     border-radius: 7px;
-    color: white;
+    color: $color3;
 
     h2{
-        font-size: 22px;
+        font-size: map-get($font-size, normal);
         margin-bottom: 20px;
         text-align: center;
         font-family: 'Noto Serif', serif;
@@ -102,11 +104,11 @@ nav{
 
 .controls{
     width: 100%;
-    background: #121212;
+    background: $color1;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid rgb(189, 251, 253);
+    border: 1px solid $color4;
     resize: none;
 }
 
@@ -115,9 +117,9 @@ input{
 }
 
 input:focus{
-    font-size: 20px;
-    border: 5px solid rgb(189, 251, 253);
-    color: rgb(189, 251, 253);
+    font-size: map-get($font-size, small);
+    border: 5px solid $color4;
+    color: $color4;
 }
 
 textarea{
@@ -125,9 +127,9 @@ textarea{
 }
 
 textarea:focus{
-    font-size: 20px;
-    border: 5px solid rgb(189, 251, 253);
-    color: rgb(189, 251, 253);
+    font-size: map-get($font-size, small);
+    border: 5px solid $color4;
+    color: $color4;
 }
 
 @media screen and (min-width:555px){
@@ -141,6 +143,14 @@ textarea:focus{
 
 .partes{
     padding-left: 30%;
+}
+
+.componentes-carbono{
+    font-family: 'Roboto Slab', serif;
+    border: 3px solid ;
+}
+.carbono-info{
+    background-color: $color3;
 }
 
 /*PRODUCTOS*/
@@ -160,7 +170,7 @@ textarea:focus{
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         transition: all 0.25s;
-        background-color: white;
+        background-color: $color3;
 
         .informacion{
             font-weight: 600;
@@ -168,14 +178,14 @@ textarea:focus{
         
             span{
                 width: 90%;
-                background-color: white;
+                background-color: $color3;
             }
 
             .precio{
                 font-family: 'Open Sans', sans-serif;
                 color: rgb(0, 175, 53);
                 text-align:center;
-                font-size: 17px;
+                font-size: map-get($font-size, xsmall);
             }
         }
 
@@ -189,27 +199,37 @@ textarea:focus{
 }
 }
 
+
 /*FOOTER*/
 
 .footer{
     padding-top: 10px;
-    background-color: #333;
+    background-color: $color2;
     position: fixed;
-    height: 9vh;
+    height: 12vh;
     width: 100%;
     text-align: center;
     bottom: 0%;
-    font-size: 16px;
+    font-size: map-get($font-size, xsmall);
     border: 1px solid black;
 
     p{
-        color: white;
+        color: $color3;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 2px;
-        padding: 1px;
     }
 }
 
+.redes{
+    a{
+    padding: 0px 0px;
+    font-size: map-get($font-size, small);
+    cursor: pointer;
+    color: $color3;
+    transition: .3s ease all;
+    letter-spacing: 20px;
+    }
+    }
 
 /*MOBILE*/
 

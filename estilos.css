@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif&family=Open+Sans:wght@300&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +13,7 @@
 body {
   margin: 0%;
   padding: 0%;
-  height: 2500px;
+  height: 1800px;
   background-color: aliceblue;
 }
 
@@ -24,7 +24,7 @@ header {
 
 .encabezado {
   font-size: 35px;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 nav {
@@ -40,9 +40,9 @@ nav {
 }
 .row .Home2 {
   text-align: center;
-  font-family: "Noto Serif", serif;
+  font-family: "Roboto Slab", serif;
   background-color: white;
-  border: 3px solid #121212;
+  border: 3px solid;
 }
 .row .Home2 .subrayadohome {
   padding-top: 15px solid #121212;
@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 /*CONTACTOS*/
-.form-register {
+.form-register, .form-register2 {
   background: #121212;
   padding: 30px;
   margin: auto;
@@ -78,8 +78,8 @@ nav ul li a {
   border-radius: 7px;
   color: white;
 }
-.form-register h2 {
-  font-size: 22px;
+.form-register h2, .form-register2 h2 {
+  font-size: 25px;
   margin-bottom: 20px;
   text-align: center;
   font-family: "Noto Serif", serif;
@@ -116,13 +116,22 @@ textarea:focus {
 }
 
 @media screen and (min-width: 555px) {
-  .form-register {
+  .form-register, .form-register2 {
     width: 555px;
   }
 }
 /*COMPONENTES*/
 .partes {
   padding-left: 30%;
+}
+
+.componentes-carbono {
+  font-family: "Roboto Slab", serif;
+  border: 3px solid;
+}
+
+.carbono-info {
+  background-color: white;
 }
 
 /*PRODUCTOS*/
@@ -168,23 +177,31 @@ textarea:focus {
   padding-top: 10px;
   background-color: #333;
   position: fixed;
-  height: 9vh;
+  height: 12vh;
   width: 100%;
   text-align: center;
   bottom: 0%;
-  font-size: 16px;
+  font-size: 17px;
   border: 1px solid black;
 }
 .footer p {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
-  padding: 1px;
+}
+
+.redes a {
+  padding: 0px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease all;
+  letter-spacing: 20px;
 }
 
 /*MOBILE*/
 @media screen and (min-width: 555px) {
-  .form-register {
+  .form-register, .form-register2 {
     width: 555px;
   }
 
@@ -198,7 +215,7 @@ textarea:focus {
     flex-direction: column;
   }
 
-  .form-register {
+  .form-register, .form-register2 {
     width: 850;
   }
 
