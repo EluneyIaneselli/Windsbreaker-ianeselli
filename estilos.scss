@@ -151,6 +151,7 @@ textarea:focus{
 }
 .carbono-info{
     background-color: $color3;
+    font-size: map-get($font-size, small);
 }
 
 /*PRODUCTOS*/
