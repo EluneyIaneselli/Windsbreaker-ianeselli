@@ -1,0 +1,31 @@
+{
+  "name": "windbreakers.ianeselli-scss",
+  "version": "1.0.0",
+  "description": "windbreakers es una tienda online sobre el mundo del ciclismo, las secciones que se encuentran son: Home, Rodados, Accesorios, Componentes, Indumentaria, Ubicacion y Contactos.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EluneyIaneselli/prueba1.git"
+  },
+  "keywords": [
+    "WINDBREAKERS",
+    "BICICLETAS",
+    "BICICLETERIA",
+    "TIENDA",
+    "MOUNTAIN",
+    "BIKE",
+    "BMX",
+    "INFANTIL",
+    "PLEGABLES",
+    "URBAN"
+  ],
+  "author": "Eluney Ianeselli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EluneyIaneselli/prueba1/issues"
+  },
+  "homepage": "https://github.com/EluneyIaneselli/prueba1#readme"
+}
