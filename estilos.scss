@@ -257,3 +257,9 @@ textarea:focus{
         align-items: center;
     }
 }
+
+@media screen and (max-width:990px){
+    .partes{
+        padding-left: 15%;
+    }
+}
