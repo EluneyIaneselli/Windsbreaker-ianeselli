@@ -95,6 +95,18 @@ nav ul li a {
   resize: none;
 }
 
+.boton {
+  width: 100%;
+  background: #121212;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(189, 251, 253);
+  resize: none;
+  padding-left: 4, 5%;
+  background-color: white;
+}
+
 input {
   transition: all 1s;
 }
